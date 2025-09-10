@@ -4,6 +4,577 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Emergency Service</title>
+
+    <!-- css link -->
+    <link rel="stylesheet" href="./styles/styles.css" />
+
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- tailwindcss and daisyUI -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
-  <body></body>
+  <body>
+    <header>
+      <nav>
+        <div class="bg-base-100 shadow-sm py-3">
+          <div class="flex justify-between items-center font-inter px-16">
+            <div class="navbar-start">
+              <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost md:hidden">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4 6h16M4 12h8m-8 6h16"
+                    />
+                  </svg>
+                </div>
+                <ul
+                  tabindex="0"
+                  class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
+                >
+                  <li class="bg-[#41ff6b1a] rounded-full px-5 py-1">
+                    <a>
+                      <span class="font-extrabold text-xl">0</span>
+                      <img class="w-8 h-8" src="./assets/heart.png" alt="" />
+                    </a>
+                  </li>
+                  <li class="bg-[#41ff6b1a] rounded-full px-5 py-1">
+                    <a>
+                      <span class="font-extrabold text-xl">100</span>
+                      <img class="w-8 h-8" src="./assets/coin.png" alt="" />
+                    </a>
+                  </li>
+                  <li class="bg-[#00a63e] rounded-full px-9 py-1">
+                    <a>
+                      <span class="font-semibold text-xl text-white"
+                        >2 Copy</span
+                      >
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="flex justify-center items-center gap-3">
+                <img class="w-12 h-12" src="./assets/logo.png" alt="" />
+                <h1 class="max-w-24 text-xl text-[#006747] font-extrabold">
+                  Emergency Service
+                </h1>
+              </div>
+            </div>
+
+            <div class="end hidden lg:flex">
+              <ul class="menu menu-horizontal px-1 gap-6">
+                <li class="bg-[#41ff6b1a] rounded-full px-5 py-1">
+                  <a>
+                    <span class="font-extrabold text-xl">0</span>
+                    <img class="w-8 h-8" src="./assets/heart.png" alt="" />
+                  </a>
+                </li>
+                <li class="bg-[#41ff6b1a] rounded-full px-5 py-1">
+                  <a>
+                    <span class="font-extrabold text-xl">100</span>
+                    <img class="w-8 h-8" src="./assets/coin.png" alt="" />
+                  </a>
+                </li>
+                <li class="bg-[#00a63e] rounded-full px-9 py-1">
+                  <a>
+                    <span class="font-semibold text-xl text-white">2 Copy</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <section>
+        <div
+          class="bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223] via-50% to-100%font-hind-madurai flex flex-col justify-center items-center space-y-4 py-6"
+        >
+          <div class="">
+            <img class="w-24 h-24" src="./assets/logo-dark.png" alt="" />
+          </div>
+          <h1 class="text-white text-5xl font-bold">
+            Emergency Service Directory
+          </h1>
+          <p class="text-white text-xl font-semibold">
+            Government Emergency Services at Your Fingertip – A Project by
+            Government of the People’s Republic of Bangladesh
+          </p>
+        </div>
+      </section>
+    </header>
+
+    <main class="bg-[#f5fff6]">
+      <div class="grid grid-cols-4 grid-rows-3 gap-8 px-16 py-12">
+        <div class="bg-white shadow rounded-xl p-8 space-y-6">
+          <div class="flex justify-between items-center">
+            <img
+              class="w-14 h-14 bg-[#ffe3e2] rounded-2xl shadow p-3"
+              src="./assets/emergency.png"
+              alt=""
+            />
+            <i class="fa-regular fa-heart text-2xl"></i>
+          </div>
+
+          <div class="">
+            <h1 class="font-hind-madurai text-2xl font-bold">
+              National Emergency Number
+            </h1>
+            <p class="font-roboto text-lg text-[#5c5c5c]">National Emergency</p>
+          </div>
+
+          <div class="">
+            <h2 class="font-roboto text-2xl font-bold">999</h2>
+            <span
+              class="font-roboto text-lg text-[#5c5c5c] bg-[#f2f2f2] rounded-full px-5 py-1"
+              >All</span
+            >
+          </div>
+
+          <div class="flex justify-between items-center gap-3">
+            <div
+              class="bg-[#ffffff] rounded-lg border-1 border-[#d4d6d5] font-roboto shadow p-3 text-center w-1/2 text-[#5c5c5c]"
+            >
+              <i class="fa-regular fa-copy"></i> Copy
+            </div>
+            <div
+              class="bg-[#00a63e] rounded-lg font-roboto shadow p-3 text-center w-1/2 text-white"
+            >
+              <i class="fa-solid fa-phone"></i> Copy
+            </div>
+          </div>
+
+        </div>
+
+        <div class="bg-white shadow rounded-xl p-8 space-y-6">
+          <div class="flex justify-between items-center">
+            <img
+              class="w-14 h-14 bg-[#dfefff] rounded-2xl shadow p-3"
+              src="./assets/police.png"
+              alt=""
+            />
+            <i class="fa-regular fa-heart text-2xl"></i>
+          </div>
+
+          <div class="">
+            <h1 class="font-hind-madurai text-2xl font-bold">
+              Police Helpline Number
+            </h1>
+            <p class="font-roboto text-lg text-[#5c5c5c]">National Emergency</p>
+          </div>
+
+          <div class="">
+            <h2 class="font-roboto text-2xl font-bold">999</h2>
+            <span
+              class="font-roboto text-lg text-[#5c5c5c] bg-[#f2f2f2] rounded-full px-5 py-1"
+              >All</span
+            >
+          </div>
+
+          <div class="flex justify-between items-center gap-3">
+            <div
+              class="bg-[#ffffff] rounded-lg border-1 border-[#d4d6d5] font-roboto shadow p-3 text-center w-1/2 text-[#5c5c5c]"
+            >
+              <i class="fa-regular fa-copy"></i> Copy
+            </div>
+            <div
+              class="bg-[#00a63e] rounded-lg font-roboto shadow p-3 text-center w-1/2 text-white"
+            >
+              <i class="fa-solid fa-phone"></i> Copy
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-white shadow rounded-xl p-8 space-y-6">
+          <div class="flex justify-between items-center">
+            <img
+              class="w-14 h-14 bg-[#ffe3e2] rounded-2xl shadow p-3"
+              src="./assets/ambulance.png"
+              alt=""
+            />
+            <i class="fa-regular fa-heart text-2xl"></i>
+          </div>
+
+          <div class="">
+            <h1 class="font-hind-madurai text-2xl font-bold">
+              Fire Service Number
+            </h1>
+            <p class="font-roboto text-lg text-[#5c5c5c]">Fire Service</p>
+          </div>
+
+          <div class="">
+            <h2 class="font-roboto text-2xl font-bold">999</h2>
+            <span
+              class="font-roboto text-lg text-[#5c5c5c] bg-[#f2f2f2] rounded-full px-5 py-1"
+              >Fire</span
+            >
+          </div>
+
+          <div class="flex justify-between items-center gap-3">
+            <div
+              class="bg-[#ffffff] rounded-lg border-1 border-[#d4d6d5] font-roboto shadow p-3 text-center w-1/2 text-[#5c5c5c]"
+            >
+              <i class="fa-regular fa-copy"></i> Copy
+            </div>
+            <div
+              class="bg-[#00a63e] rounded-lg font-roboto shadow p-3 text-center w-1/2 text-white"
+            >
+              <i class="fa-solid fa-phone"></i> Copy
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-white shadow rounded-xl row-span-3 p-6 space-y-2">
+          <div class="flex justify-between items-center">
+            <div class="">
+              <i class="fa-solid fa-clock-rotate-left"></i
+              ><span class="font-roboto text-xl font-medium">
+                Call History</span
+              >
+            </div>
+
+            <span
+              class="font-inter font-semibold text-white bg-[#00a63e] rounded-full px-9 py-1"
+              >Clear</span
+            >
+          </div>
+
+          <!-- call list -->
+          <div
+            class="bg-[#fafafa] rounded-lg p-4 flex justify-between items-center gap-4"
+          >
+            <div>
+              <h1 class="font-inter text-lg font-semibold">
+                Fire Service Number
+              </h1>
+              <p class="font-hind-madurai text-[#5c5c5c] text-lg font-normal">
+                999
+              </p>
+            </div>
+            <span class="font-hind-madurai text-[#111111] text-lg font-normal"
+              >11:36:58 AM</span
+            >
+          </div>
+
+          <div
+            class="bg-[#fafafa] rounded-lg p-4 flex justify-between items-center gap-4"
+          >
+            <div>
+              <h1 class="font-inter text-lg font-semibold">
+                National Emergency Number
+              </h1>
+              <p class="font-hind-madurai text-[#5c5c5c] text-lg font-normal">
+                1994-999999
+              </p>
+            </div>
+            <span class="font-hind-madurai text-[#111111] text-lg font-normal"
+              >11:36:58 AM</span
+            >
+          </div>
+
+          <div
+            class="bg-[#fafafa] rounded-lg p-4 flex justify-between items-center gap-4"
+          >
+            <div>
+              <h1 class="font-inter text-lg font-semibold">
+                Fire Service Number
+              </h1>
+              <p class="font-hind-madurai text-[#5c5c5c] text-lg font-normal">
+                999
+              </p>
+            </div>
+            <span class="font-hind-madurai text-[#111111] text-lg font-normal"
+              >11:36:58 AM</span
+            >
+          </div>
+
+          <div
+            class="bg-[#fafafa] rounded-lg p-4 flex justify-between items-center gap-4"
+          >
+            <div>
+              <h1 class="font-inter text-lg font-semibold">
+                Bangladesh Railway Helpline 
+              </h1>
+              <p class="font-hind-madurai text-[#5c5c5c] text-lg font-normal">
+                999
+              </p>
+            </div>
+            <span class="font-hind-madurai text-[#111111] text-lg font-normal"
+              >11:36:58 AM</span
+            >
+          </div>
+          
+          <div
+            class="bg-[#fafafa] rounded-lg p-4 flex justify-between items-center gap-4"
+          >
+            <div>
+              <h1 class="font-inter text-lg font-semibold">
+                Fire Service Number
+              </h1>
+              <p class="font-hind-madurai text-[#5c5c5c] text-lg font-normal">
+                999
+              </p>
+            </div>
+            <span class="font-hind-madurai text-[#111111] text-lg font-normal"
+              >11:36:58 AM</span
+            >
+          </div>
+        </div>
+
+        <div class="bg-white shadow rounded-xl p-8 space-y-6">
+          <div class="flex justify-between items-center">
+            <img
+              class="w-14 h-14 bg-[#ffe3e2] rounded-2xl shadow p-3"
+              src="./assets/ambulance.png"
+              alt=""
+            />
+            <i class="fa-regular fa-heart text-2xl"></i>
+          </div>
+
+          <div class="">
+            <h1 class="font-hind-madurai text-2xl font-bold">
+              Ambulance Service
+            </h1>
+            <p class="font-roboto text-lg text-[#5c5c5c]">Ambulance</p>
+          </div>
+
+          <div class="">
+            <h2 class="font-roboto text-2xl font-bold">999</h2>
+            <span
+              class="font-roboto text-lg text-[#5c5c5c] bg-[#f2f2f2] rounded-full px-5 py-1"
+              >Health</span
+            >
+          </div>
+
+          <div class="flex justify-between items-center gap-3">
+            <div
+              class="bg-[#ffffff] rounded-lg border-1 border-[#d4d6d5] font-roboto shadow p-3 text-center w-1/2 text-[#5c5c5c]"
+            >
+              <i class="fa-regular fa-copy"></i> Copy
+            </div>
+            <div
+              class="bg-[#00a63e] rounded-lg font-roboto shadow p-3 text-center w-1/2 text-white"
+            >
+              <i class="fa-solid fa-phone"></i> Copy
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-white shadow rounded-xl p-8 space-y-6">
+          <div class="flex justify-between items-center">
+            <img
+              class="w-14 h-14 bg-[#ffe3e2] rounded-2xl shadow p-3"
+              src="./assets/emergency.png"
+              alt=""
+            />
+            <i class="fa-regular fa-heart text-2xl"></i>
+          </div>
+
+          <div class="">
+            <h1 class="font-hind-madurai text-2xl font-bold">
+              Women & Child Helpline
+            </h1>
+            <p class="font-roboto text-lg text-[#5c5c5c]">Women & Child Helpline</p>
+          </div>
+
+          <div class="">
+            <h2 class="font-roboto text-2xl font-bold">999</h2>
+            <span
+              class="font-roboto text-lg text-[#5c5c5c] bg-[#f2f2f2] rounded-full px-5 py-1"
+              >Help</span
+            >
+          </div>
+
+          <div class="flex justify-between items-center gap-3">
+            <div
+              class="bg-[#ffffff] rounded-lg border-1 border-[#d4d6d5] font-roboto shadow p-3 text-center w-1/2 text-[#5c5c5c]"
+            >
+              <i class="fa-regular fa-copy"></i> Copy
+            </div>
+            <div
+              class="bg-[#00a63e] rounded-lg font-roboto shadow p-3 text-center w-1/2 text-white"
+            >
+              <i class="fa-solid fa-phone"></i> Copy
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-white shadow rounded-xl p-8 space-y-6">
+          <div class="flex justify-between items-center">
+            <img
+              class="w-14 h-14 bg-[#ffe3e2] rounded-2xl shadow p-3"
+              src="./assets/emergency.png"
+              alt=""
+            />
+            <i class="fa-regular fa-heart text-2xl"></i>
+          </div>
+
+          <div class="">
+            <h1 class="font-hind-madurai text-2xl font-bold">
+              Anti-Corruption Helpline
+            </h1>
+            <p class="font-roboto text-lg text-[#5c5c5c]">Anti-Corruption</p>
+          </div>
+
+          <div class="">
+            <h2 class="font-roboto text-2xl font-bold">999</h2>
+            <span
+              class="font-roboto text-lg text-[#5c5c5c] bg-[#f2f2f2] rounded-full px-5 py-1"
+              >Govt.</span
+            >
+          </div>
+
+          <div class="flex justify-between items-center gap-3">
+            <div
+              class="bg-[#ffffff] rounded-lg border-1 border-[#d4d6d5] font-roboto shadow p-3 text-center w-1/2 text-[#5c5c5c]"
+            >
+              <i class="fa-regular fa-copy"></i> Copy
+            </div>
+            <div
+              class="bg-[#00a63e] rounded-lg font-roboto shadow p-3 text-center w-1/2 text-white"
+            >
+              <i class="fa-solid fa-phone"></i> Copy
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-white shadow rounded-xl p-8 space-y-6">
+          <div class="flex justify-between items-center">
+            <img
+              class="w-14 h-14 bg-[#ffe3e2] rounded-2xl shadow p-3"
+              src="./assets/emergency.png"
+              alt=""
+            />
+            <i class="fa-regular fa-heart text-2xl"></i>
+          </div>
+
+          <div class="">
+            <h1 class="font-hind-madurai text-2xl font-bold">
+              Electricity Helpline
+            </h1>
+            <p class="font-roboto text-lg text-[#5c5c5c]">Electricity Outage</p>
+          </div>
+
+          <div class="">
+            <h2 class="font-roboto text-2xl font-bold">999</h2>
+            <span
+              class="font-roboto text-lg text-[#5c5c5c] bg-[#f2f2f2] rounded-full px-5 py-1"
+              >Electricity</span
+            >
+          </div>
+
+          <div class="flex justify-between items-center gap-3">
+            <div
+              class="bg-[#ffffff] rounded-lg border-1 border-[#d4d6d5] font-roboto shadow p-3 text-center w-1/2 text-[#5c5c5c]"
+            >
+              <i class="fa-regular fa-copy"></i> Copy
+            </div>
+            <div
+              class="bg-[#00a63e] rounded-lg font-roboto shadow p-3 text-center w-1/2 text-white"
+            >
+              <i class="fa-solid fa-phone"></i> Copy
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-white shadow rounded-xl p-8 space-y-6">
+          <div class="flex justify-between items-center">
+            <img
+              class="w-14 h-14 bg-[#ffe3e2] rounded-2xl shadow p-3"
+              src="./assets/emergency.png"
+              alt=""
+            />
+            <i class="fa-regular fa-heart text-2xl"></i>
+          </div>
+
+          <div class="">
+            <h1 class="font-hind-madurai text-2xl font-bold">
+              Brac Helpline
+            </h1>
+            <p class="font-roboto text-lg text-[#5c5c5c]">Brac</p>
+          </div>
+
+          <div class="">
+            <h2 class="font-roboto text-2xl font-bold">999</h2>
+            <span
+              class="font-roboto text-lg text-[#5c5c5c] bg-[#f2f2f2] rounded-full px-5 py-1"
+              >NGO</span
+            >
+          </div>
+
+          <div class="flex justify-between items-center gap-3">
+            <div
+              class="bg-[#ffffff] rounded-lg border-1 border-[#d4d6d5] font-roboto shadow p-3 text-center w-1/2 text-[#5c5c5c]"
+            >
+              <i class="fa-regular fa-copy"></i> Copy
+            </div>
+            <div
+              class="bg-[#00a63e] rounded-lg font-roboto shadow p-3 text-center w-1/2 text-white"
+            >
+              <i class="fa-solid fa-phone"></i> Copy
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-white shadow rounded-xl p-8 space-y-6">
+          <div class="flex justify-between items-center">
+            <img
+              class="w-14 h-14 bg-[#ffe3e2] rounded-2xl shadow p-3"
+              src="./assets/emergency.png"
+              alt=""
+            />
+            <i class="fa-regular fa-heart text-2xl"></i>
+          </div>
+
+          <div class="">
+            <h1 class="font-hind-madurai text-2xl font-bold">
+              Bangladesh Railway Helpline 
+            </h1>
+            <p class="font-roboto text-lg text-[#5c5c5c]">Bangladesh Railway</p>
+          </div>
+
+          <div class="">
+            <h2 class="font-roboto text-2xl font-bold">999</h2>
+            <span
+              class="font-roboto text-lg text-[#5c5c5c] bg-[#f2f2f2] rounded-full px-5 py-1"
+              >Travel</span
+            >
+          </div>
+
+          <div class="flex justify-between items-center gap-3">
+            <div
+              class="bg-[#ffffff] rounded-lg border-1 border-[#d4d6d5] font-roboto shadow p-3 text-center w-1/2 text-[#5c5c5c]"
+            >
+              <i class="fa-regular fa-copy"></i> Copy
+            </div>
+            <div
+              class="bg-[#00a63e] rounded-lg font-roboto shadow p-3 text-center w-1/2 text-white"
+            >
+              <i class="fa-solid fa-phone"></i> Copy
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
 </html>
